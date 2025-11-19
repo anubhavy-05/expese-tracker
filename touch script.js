@@ -36,4 +36,12 @@ function saveExpenses() {
 
     // Save the JSON string to Local Storage under the key 'expenses'
     localStorage.setItem('expenses', expenseJSON);
+    // 4. Add the new object to the global array
+expenses.push(expense); 
+
+// 5. Save the updated array to Local Storage
+saveExpenses(); // <--- ADD THIS LINE
+
+// console.log('New Expense:', { name, amount, date }); 
+// ... rest of the function
 }
