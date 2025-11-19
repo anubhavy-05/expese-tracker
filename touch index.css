@@ -76,3 +76,20 @@ h2 {
   margin: 0;
   font-size: 16px;
 }
+.expense-info small {
+  color: #777;
+}
+.expense-cost span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.delete-btn {
+  background: #dc3545; /* Red */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
