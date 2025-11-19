@@ -50,3 +50,11 @@ h1 {
   font-size: 16px;
   cursor: pointer;
 }
+#add-btn:hover {
+  background: #218838; /* A darker green */
+}
+h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+}
