@@ -91,3 +91,9 @@ if (saved) {
 }
 // 3. Display the loaded data
 renderExpenses();
+// Run this function when the script loads to load saved data
+loadExpenses();
+// 7. Clear the input fields
+nameInput.value = '';
+amountInput.value = '';
+dateInput.value = '';
