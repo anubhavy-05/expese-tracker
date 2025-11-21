@@ -136,3 +136,19 @@ if (parseFloat(amount) <= 0 || isNaN(parseFloat(amount))) {
     alert("Please enter a valid positive amount.");
     return;
 }
+if (saved) {
+    // ... (existing code)
+} else {
+    expenses = [];
+    updateTotal(); // <-- NEW: Ensure total is $0.00 if no data is found
+}
+// Wrap the entire logic in a confirmation
+if (confirm('Are you sure you want to delete this expense?')) {
+    const idToDelete = parseInt(event.target.dataset.id);
+
+    expenses = expenses.filter(expense => expense.id !== idToDelete);
+
+    saveExpenses();
+    renderExpenses();
+    updateTotal(); 
+}
