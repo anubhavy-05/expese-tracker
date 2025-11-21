@@ -104,4 +104,5 @@ function deleteExpense(event) {
     // 2. Update storage and display
     saveExpenses();
     renderExpenses();
+    const idToDelete = parseInt(event.target.dataset.id); // <--- Use parseInt
 }
