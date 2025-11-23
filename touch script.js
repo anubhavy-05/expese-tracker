@@ -161,3 +161,10 @@ function exportData() {
     // Day 12 will handle the download logic here
     console.log("Export button clicked!");
 }
+if (expenses.length === 0) {
+    alert("The list is empty. Nothing to export.");
+    return;
+}
+
+const data = JSON.stringify(expenses, null, 2); // 2 spaces for nice formatting
+const blob = new Blob([data], { type: 'application/json' });
