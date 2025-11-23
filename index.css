@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+#expense-form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+.form-control {
+  /* We will use flexbox to stack the label and input vertically */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+/* This targets all 3 inputs */
+.form-control input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+#add-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #28a745; /* A nice green color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#add-btn:hover {
+  background: #218838; /* A darker green */
+}
+h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+#total-amount {
+  text-align: right; /* Puts it on the right side */
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #333;
+}
+.expense-item {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; /* Pushes items to edges */
+  align-items: center;
+}
+.expense-info h4 {
+  margin: 0;
+  font-size: 16px;
+}
+.expense-info small {
+  color: #777;
+}
+.expense-cost span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.delete-btn {
+  background: #dc3545; /* Red */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+/* Day 11: Media Query for smaller screens (max-width 600px) */
+@media (max-width: 600px) {
+
+.container {
+    width: 95%; /* Make it take up slightly more screen space */
+    padding: 0 10px;
+}
+h1 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.expense-info h4 {
+    font-size: 14px;
+}
+.expense-cost span {
+    font-size: 14px;
+}
+}
+#export-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #007bff; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#export-btn:hover {
+    background: #0056b3; /* Darker blue */
+}

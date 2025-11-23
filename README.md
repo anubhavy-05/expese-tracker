@@ -6,7 +6,7 @@
 ---
 ### Live Demo
 
-[**View Live Application Here**](https://YourUsername.github.io/simple-expense-tracker/)
+[**View Live Application Here**](https://anubhavy-05.github.io/expese-tracker/)
 
 ---
 ### Project Overview
